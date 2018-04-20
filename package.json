@@ -1,0 +1,37 @@
+{
+  "name": "stephencottontail",
+  "version": "1.0.0",
+  "description": "Personal theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephencottontail/stephencottontail.git"
+  },
+  "keywords": [
+    "wp",
+    "theme"
+  ],
+  "author": "Stephen Dickinson <stephencottontail@me.com>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/stephencottontail/stephencottontail/issues"
+  },
+  "homepage": "https://github.com/stephencottontail/stephencottontail#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "normalize.css": "^8.0.0"
+  },
+	"babel": {
+		"presets": [
+			"env"
+		]
+	}
+}
