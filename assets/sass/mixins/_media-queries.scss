@@ -1,0 +1,35 @@
+@mixin rain-drop {
+	@media ( min-width: $rain-drop ) {
+		@content;
+	}
+}
+
+@mixin puddle {
+	@media ( min-width: $puddle ) {
+		@content;
+	}
+}
+
+@mixin pond {
+	@media ( min-width: $pond ) {
+		@content;
+	}
+}
+
+@mixin river {
+	@media ( min-width: $river ) {
+		@content;
+	}
+}
+
+@mixin lake {
+	@media ( min-width: $lake ) {
+		@content;
+	}
+}
+
+@mixin ocean {
+	@media ( min-width: $ocean ) {
+		@content;
+	}
+}
