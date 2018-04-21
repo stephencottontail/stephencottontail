@@ -40,3 +40,6 @@ function sc_enqueue_crap() {
 	wp_enqueue_style( 'sc-style', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'sc_enqueue_crap' );
+
+// Load some other stuff
+include_once( get_theme_file_path( '/lib/header.php' ) );

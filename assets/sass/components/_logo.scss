@@ -1,0 +1,34 @@
+.letter {
+	fill: url(#water);
+	font-family: "Times", serif;
+	font-size: 80px;
+	font-weight: 900;
+}
+
+.shape {
+	fill: $background-color;
+}
+
+.expand {
+	animation-name: concentric;
+	animation-duration: 2s;
+	transform-origin: center center;
+}
+
+.stop1 {
+	stop-color: $secondary-color;
+}
+
+.stop2 {
+	stop-color: $primary-color;
+}
+
+@keyframes concentric {
+	0% {
+		transform: scale( 0 );
+	}
+
+	100% {
+		transform: scale( 1 );
+	}
+}
