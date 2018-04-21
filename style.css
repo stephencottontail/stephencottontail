@@ -3,5 +3,14 @@ Theme Name: stephencottontail.com
 Template: genesis
 */
 body {
-  margin: 0;
-  padding: 0; }
+  background-color: #f5f5f5;
+  color: #222222;
+  font-family: "Rubik", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeLegilibity; }
+
+a {
+  color: #acb6e5; }
+  a:hover, a:active, a:focus {
+    color: #8594d9; }
