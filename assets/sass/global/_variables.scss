@@ -1,0 +1,17 @@
+$sans: "Rubik", "Helvetica", sans-serif;
+$serif: "Trirong", "Palatino", serif;
+$mono: "Courier New", monospace;
+$body-font: $sans;
+$header-font: $serif;
+$code-font: $mono;
+
+$primary-color: #acb6e5;
+$secondary-color: #74ebd5;
+$background-color: #f5f5f5;
+$body-color: #222222;
+$link-color: $primary-color;
+$link-hover-color: darken( $primary-color, 10 );
+
+$font-size: 16px;
+$line-height: 1.5;
+$spacer: ( $font-size * $line-height );
