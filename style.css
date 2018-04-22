@@ -8,6 +8,7 @@ Template: genesis
   width: 1px;
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   overflow: hidden;
   word-wrap: normal !important;
@@ -16,6 +17,7 @@ Template: genesis
     height: auto;
     width: auto;
     background-color: #f5f5f5;
+    -webkit-box-shadow: 0 0 2px 2px rgba(34, 34, 34, 0.15);
     box-shadow: 0 0 2px 2px rgba(34, 34, 34, 0.15);
     color: #222222;
     padding: 24px;
@@ -28,6 +30,7 @@ Template: genesis
   width: 1px;
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   overflow: hidden;
   word-wrap: normal !important;
@@ -36,6 +39,7 @@ Template: genesis
     height: auto;
     width: auto;
     background-color: #f5f5f5;
+    -webkit-box-shadow: 0 0 2px 2px rgba(34, 34, 34, 0.15);
     box-shadow: 0 0 2px 2px rgba(34, 34, 34, 0.15);
     color: #222222;
     padding: 24px;
@@ -56,6 +60,7 @@ a {
     color: #8594d9; }
 
 .site-header {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(116, 235, 213, 0.75)), to(#acb6e5));
   background-image: linear-gradient(to right, rgba(116, 235, 213, 0.75), #acb6e5);
   height: 200px;
   margin: 48px 0; }
@@ -70,8 +75,11 @@ a {
   fill: #f5f5f5; }
 
 .expand {
+  -webkit-animation-name: concentric;
   animation-name: concentric;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-transform-origin: center center;
   transform-origin: center center; }
 
 .stop1 {
@@ -80,8 +88,18 @@ a {
 .stop2 {
   stop-color: #acb6e5; }
 
-@keyframes concentric {
+@-webkit-keyframes concentric {
   0% {
+    -webkit-transform: scale(0);
     transform: scale(0); }
   100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes concentric {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
     transform: scale(1); } }

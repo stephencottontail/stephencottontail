@@ -12,12 +12,12 @@ gulp.task('copy:normalize', () => {
 });
 
 gulp.task('styles', () => {
-	gulp.src('assets/sass/**/*')
+	gulp.src('assets/sass/**/*.scss')
 	    .pipe(sass().on('error', sass.logError))
-	    // .pipe(autoprefixer({
-	    //	browsers: ['last 2 versions'],
-	    //	cascade: false
-	    //}))
+	     .pipe(autoprefixer({
+	    	browsers: ['last 2 versions'],
+	    	cascade: false
+	    }))
 	    .pipe(gulp.dest('./'))
 });
 
