@@ -1,3 +1,13 @@
+.logo {
+	height: 100px;
+	width: 100px;
+
+	@include river {
+		height: 200px;
+		width: 200px;
+	}
+}
+
 .letter {
 	fill: url(#water);
 	font-family: "Times", serif;

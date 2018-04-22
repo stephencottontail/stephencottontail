@@ -62,8 +62,16 @@ a {
 .site-header {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(116, 235, 213, 0.75)), to(#acb6e5));
   background-image: linear-gradient(to right, rgba(116, 235, 213, 0.75), #acb6e5);
-  height: 200px;
-  margin: 48px 0; }
+  height: 100px;
+  margin: 72px 0; }
+
+.logo {
+  height: 100px;
+  width: 100px; }
+  @media (min-width: 1024px) {
+    .logo {
+      height: 200px;
+      width: 200px; } }
 
 .letter {
   fill: url(#water);

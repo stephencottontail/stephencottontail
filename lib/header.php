@@ -3,7 +3,7 @@
 // Add SVG logo
 function sc_svg_logo() {
 	?>
-	<svg height="200" width="200">
+	<svg class="logo" height="200" width="200" viewBox="0 0 200 200">
 		<linearGradient id="water">
 			<stop class="stop1" offset="0%" />
 			<stop class="stop2" offset="50%" />
