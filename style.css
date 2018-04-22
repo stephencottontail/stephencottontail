@@ -56,12 +56,14 @@ a {
     color: #8594d9; }
 
 .site-header {
-  background-image: linear-gradient(to right, rgba(116, 235, 213, 0.75), #acb6e5); }
+  background-image: linear-gradient(to right, rgba(116, 235, 213, 0.75), #acb6e5);
+  height: 200px;
+  margin: 48px 0; }
 
 .letter {
   fill: url(#water);
   font-family: "Times", serif;
-  font-size: 80px;
+  font-size: 120px;
   font-weight: 900; }
 
 .shape {

@@ -3,15 +3,15 @@
 // Add SVG logo
 function sc_svg_logo() {
 	?>
-	<svg height="400" width="200" viewBox="0 0 100 100">
+	<svg height="200" width="200">
 		<linearGradient id="water">
 			<stop class="stop1" offset="0%" />
 			<stop class="stop2" offset="50%" />
 		</linearGradient>
-		<ellipse class="shape expand" cx="25" cy="15" rx="8" ry="30" />
-		<ellipse class="shape expand" cx="57" cy="15" rx="8" ry="30" />
-		<ellipse class="shape expand" cx="41" cy="53" rx="35" ry="25" stroke-width="3" />
-		<text class="letter" x ="20" y="80">S</text>
+		<ellipse class="shape expand" cx="57" cy="75" rx="18" ry="60" />
+		<ellipse class="shape expand" cx="143" cy="75" rx="18" ry="60" />
+		<ellipse class="shape expand" cx="100" cy="140" rx="85" ry="55" stroke-width="3" />
+		<text class="letter" text-anchor="middle" x="100" y="175">S</text>
 	</svg>
 <?php
 }

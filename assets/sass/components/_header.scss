@@ -1,4 +1,6 @@
 .site-header {
 	background-image: linear-gradient( to right, rgba( $secondary-color, 0.75 ), rgba( $primary-color, 1 ) );
+	height: 200px;
+	margin: ( $spacer * 2 ) 0;
 }
 
