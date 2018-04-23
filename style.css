@@ -53,6 +53,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   text-rendering: optimizeLegilibity; }
+  body.menu-active {
+    position: fixed;
+    overflow: hidden; }
 
 a {
   color: #acb6e5; }
@@ -113,10 +116,12 @@ a {
   display: none;
   position: fixed;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   background-color: rgba(34, 34, 34, 0.9);
+  font-family: "Trirong", "Palatino", serif;
+  font-size: 60px;
   overflow-y: scroll;
   padding: 120px 35%; }
   .admin-bar .nav-primary {
@@ -126,7 +131,6 @@ a {
         top: 32px; } }
   .nav-primary ul {
     width: 30%;
-    font-size: 48px;
     list-style: none;
     margin: 0;
     padding: 0; }

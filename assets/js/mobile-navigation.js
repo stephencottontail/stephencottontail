@@ -76,6 +76,7 @@
 		_toggleAria( $this, 'aria-expanded' );
 		$this.toggleClass( 'activated' );
 		$this.next( 'nav, .sub-menu' ).slideToggle( 'fast' );
+		$( 'body' ).toggleClass( 'menu-active' );
 	}
 
 	/**

@@ -5,6 +5,11 @@ body {
 	font-size: $font-size;
 	line-height: $line-height;
 	text-rendering: optimizeLegilibity;
+
+	&.menu-active {
+		position: fixed;
+		overflow: hidden;
+	}
 }
 
 a {
