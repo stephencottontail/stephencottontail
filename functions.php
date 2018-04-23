@@ -12,6 +12,11 @@
 // Start the engine
 include_once( get_theme_file_path( '/lib/init.php' ) );
 
+// Child theme defines
+define( 'CHILD_THEME_NAME', 'stephencottontail.com' );
+define( 'CHILD_THEME_URL', 'http://stephencottontail.com/' );
+define( 'CHILD_THEME_VERSION', '1.0.0' );
+
 // Add HTML5 support
 add_theme_support( 'html5', array(
 		'caption',
@@ -37,7 +42,6 @@ add_theme_support( 'genesis-responsive-viewport' );
 function sc_enqueue_crap() {
 	wp_enqueue_style( 'normalize', get_theme_file_uri( '/assets/css/normalize.css' ) );
 	wp_enqueue_style( 'sc-google-fonts', '//fonts.googleapis.com/css?family=Trirong:400,400i,900,900i|Rubik' );
-	wp_enqueue_style( 'sc-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'sc-menus', get_theme_file_uri( '/assets/js/mobile-navigation.js' ), array( 'jquery' ), null, true );
 }

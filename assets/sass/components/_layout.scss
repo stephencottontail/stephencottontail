@@ -1,0 +1,21 @@
+@include river {
+	.site-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.site-header {
+		flex-basis: 33.33%;
+		min-width: 0;
+	}
+	
+	.site-inner {
+		flex-basis: 66.66%;
+		min-width: 0;
+		padding: 0 ( $spacer * 2 );
+	}
+
+	.genesis-skip-link {
+		display: none;
+	}
+}

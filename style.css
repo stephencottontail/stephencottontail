@@ -73,6 +73,25 @@ a {
   a:hover, a:active, a:focus {
     color: #8594d9; }
 
+@media (min-width: 1024px) {
+  .site-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .site-header {
+    -ms-flex-preferred-size: 33.33%;
+    flex-basis: 33.33%;
+    min-width: 0; }
+  .site-inner {
+    -ms-flex-preferred-size: 66.66%;
+    flex-basis: 66.66%;
+    min-width: 0;
+    padding: 0 48px; }
+  .genesis-skip-link {
+    display: none; } }
+
 .site-header {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(116, 235, 213, 0.75)), to(#acb6e5));
   background-image: linear-gradient(to right, rgba(116, 235, 213, 0.75), #acb6e5);
@@ -80,9 +99,13 @@ a {
   margin: 72px 0; }
   @media (min-width: 1024px) {
     .site-header {
+      background-image: none;
       height: auto;
-      width: calc( 100% / 3);
-      margin: 0 48px; } }
+      margin: 0;
+      padding: 0 12px; }
+      .site-header .wrap {
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba(116, 235, 213, 0.75)), to(#acb6e5));
+        background-image: linear-gradient(to right, rgba(116, 235, 213, 0.75), #acb6e5); } }
 
 .menu-toggle {
   position: absolute;
