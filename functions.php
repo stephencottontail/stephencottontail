@@ -38,6 +38,8 @@ function sc_enqueue_crap() {
 	wp_enqueue_style( 'normalize', get_theme_file_uri( '/assets/css/normalize.css' ) );
 	wp_enqueue_style( 'sc-google-fonts', '//fonts.googleapis.com/css?family=Trirong:400,400i,900,900i|Rubik' );
 	wp_enqueue_style( 'sc-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'sc-menus', get_theme_file_uri( '/assets/js/mobile-navigation.js' ), array( 'jquery' ), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'sc_enqueue_crap' );
 
