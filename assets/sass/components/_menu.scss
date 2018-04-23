@@ -1,0 +1,68 @@
+.menu-toggle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: $spacer * 2;
+	width: $spacer * 2;
+	appearance: none;
+	border: 0;
+	border-radius: 0;
+	background-color: $secondary-color;
+	color: $background-color;
+	z-index: 100;
+	
+	&:before,
+	.icon,
+	&:after {
+		display: block;
+		width: 100%;
+		height: 0.2rem;
+		background-color: $background-color;
+		border-radius: 0.2em;
+		content: '';
+		margin: 0 0 0.2em;
+		transition: all 600ms ease-in-out;
+		transition-delay: 900ms;
+	}
+
+	&.activated {
+		background-color: transparent;
+
+		.icon {
+			transform: scale( 0 );
+		}
+
+		&:before {
+			transform: translateY( 0.4em ) rotate( 135deg );
+		}
+		
+		&:after {
+			transform: translateY( -0.4em ) rotate( -135deg );
+		}
+	}
+}
+
+.nav-primary {
+	display: none;
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba( $body-color, 0.90 );
+	overflow-y: scroll;
+	padding: ( $spacer * 5 ) 35%;
+
+	ul {
+		width: 30%;
+		font-size: 48px;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: $background-color;
+		text-decoration: none;
+	}
+}

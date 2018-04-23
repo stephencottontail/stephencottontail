@@ -65,6 +65,65 @@ a {
   height: 100px;
   margin: 72px 0; }
 
+.menu-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 48px;
+  width: 48px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  background-color: #74ebd5;
+  color: #f5f5f5;
+  z-index: 100; }
+  .menu-toggle:before,
+  .menu-toggle .icon, .menu-toggle:after {
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #f5f5f5;
+    border-radius: 0.2em;
+    content: '';
+    margin: 0 0 0.2em;
+    -webkit-transition: all 600ms ease-in-out;
+    transition: all 600ms ease-in-out;
+    -webkit-transition-delay: 900ms;
+    transition-delay: 900ms; }
+  .menu-toggle.activated {
+    background-color: transparent; }
+    .menu-toggle.activated .icon {
+      -webkit-transform: scale(0);
+      transform: scale(0); }
+    .menu-toggle.activated:before {
+      -webkit-transform: translateY(0.4em) rotate(135deg);
+      transform: translateY(0.4em) rotate(135deg); }
+    .menu-toggle.activated:after {
+      -webkit-transform: translateY(-0.4em) rotate(-135deg);
+      transform: translateY(-0.4em) rotate(-135deg); }
+
+.nav-primary {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(34, 34, 34, 0.9);
+  overflow-y: scroll;
+  padding: 120px 35%; }
+  .nav-primary ul {
+    width: 30%;
+    font-size: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .nav-primary a {
+    color: #f5f5f5;
+    text-decoration: none; }
+
 .logo {
   height: 100px;
   width: 100px; }

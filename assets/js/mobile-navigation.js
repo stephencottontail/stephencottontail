@@ -18,7 +18,8 @@
 				'class' : mainMenuButtonClass,
 				'aria-expanded' : false,
 				'aria-pressed' : false,
-				'role' : 'button'
+				'role' : 'button',
+				'html' : '<span class="icon">'
 				} )
 				.append( genesisSample.params.mainMenu ),
 			submenu : $( '<button />', {
