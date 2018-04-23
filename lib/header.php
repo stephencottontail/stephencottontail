@@ -19,3 +19,7 @@ add_action( 'genesis_header', 'sc_svg_logo' );
 
 // We use a logo, so don't display the text title or description
 remove_action( 'genesis_header', 'genesis_do_header' );
+
+// Move header menu inside .site-header
+remove_action( 'genesis_after_header', 'genesis_do_nav' );
+add_action( 'genesis_header', 'genesis_do_nav', 13 );

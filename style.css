@@ -162,13 +162,11 @@ a {
       display: block;
       position: static;
       height: auto;
-      width: calc( 100% / 3);
+      width: 100%;
       background-color: transparent;
-      background-image: -webkit-gradient(linear, left top, right top, from(rgba(116, 235, 213, 0.75)), to(#acb6e5));
-      background-image: linear-gradient(to right, rgba(116, 235, 213, 0.75), #acb6e5);
       color: #222222;
       font-size: 16px;
-      margin: 0 48px;
+      margin: 0;
       padding: 0; }
       .nav-primary a {
         display: block;
