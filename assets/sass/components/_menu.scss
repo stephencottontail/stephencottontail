@@ -10,7 +10,11 @@
 	background-color: $secondary-color;
 	color: $background-color;
 	z-index: 100;
-	
+
+	.admin-bar & {
+		@include admin-bar();
+	}
+
 	&:before,
 	.icon,
 	&:after {
@@ -53,6 +57,10 @@
 	overflow-y: scroll;
 	padding: ( $spacer * 5 ) 35%;
 
+	.admin-bar & {
+		@include admin-bar();
+	}
+	
 	ul {
 		width: 30%;
 		font-size: 48px;

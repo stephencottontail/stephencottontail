@@ -33,3 +33,9 @@
 		@content;
 	}
 }
+
+@mixin admin-bar-switch {
+	@media ( min-width: $admin-bar-switch ) {
+		@content;
+	}
+}
