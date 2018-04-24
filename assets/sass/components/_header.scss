@@ -8,7 +8,7 @@
 		height: auto;
 		margin: 0;
 
-		.wrap {
+		& > .wrap {
 			background-image: linear-gradient( to right, rgba( $secondary-color, 0.75 ), rgba( $primary-color, 1 ) );
 			margin: 0 ( $spacer * 2 );
 		}
