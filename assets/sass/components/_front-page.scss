@@ -1,0 +1,9 @@
+.front-page-posts-section {
+	padding: 0 ( $spacer * 2 );
+	
+	@include river {
+		display: inline-block;
+		float: left;
+		width: 50%;
+	}
+}

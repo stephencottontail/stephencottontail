@@ -2,6 +2,7 @@
 	.site-container {
 		display: flex;
 		flex-wrap: wrap;
+		min-height: 100vh;
 	}
 
 	.site-header {
@@ -12,7 +13,6 @@
 	.site-inner {
 		flex-basis: 66.66%;
 		min-width: 0;
-		padding: 0 ( $spacer * 2 );
 	}
 
 	.genesis-skip-link {
