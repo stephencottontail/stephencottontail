@@ -2,17 +2,18 @@
 	.site-container {
 		display: flex;
 		flex-wrap: wrap;
-		min-height: 100vh;
 	}
 
 	.site-header {
 		flex-basis: 33.33%;
 		min-width: 0;
+		min-height: 100vh;
 	}
 	
 	.site-inner {
 		flex-basis: 66.66%;
 		min-width: 0;
+		min-height: 100vh;
 	}
 
 	.genesis-skip-link {

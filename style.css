@@ -79,16 +79,17 @@ a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    height: 100vh; }
+    flex-wrap: wrap; }
   .site-header {
     -ms-flex-preferred-size: 33.33%;
     flex-basis: 33.33%;
-    min-width: 0; }
+    min-width: 0;
+    min-height: 100vh; }
   .site-inner {
     -ms-flex-preferred-size: 66.66%;
     flex-basis: 66.66%;
-    min-width: 0; }
+    min-width: 0;
+    min-height: 100vh; }
   .genesis-skip-link {
     display: none; } }
 
