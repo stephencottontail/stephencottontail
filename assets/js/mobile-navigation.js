@@ -21,28 +21,16 @@
 				'role' : 'button',
 				'html' : '<span class="icon">'
 				} )
-				.append( genesisSample.params.mainMenu ),
-			submenu : $( '<button />', {
-				'class' : subMenuButtonClass,
-				'aria-expanded' : false,
-				'aria-pressed' : false,
-				'role' : 'button'
-				} )
-				.append( $( '<span />', {
-					'class' : 'screen-reader-text',
-					text : genesisSample.params.subMenu
-				} ) )
+				.append( genesisSample.params.mainMenu )
 		};
 		if ($( '.nav-primary' ).length > 0 ) {
 			$( '.nav-primary' ).before( toggleButtons.menu ); // add the main nav buttons
 		} else {
 			$( '.nav-header' ).before( toggleButtons.menu );
 		}
-		$( 'nav .sub-menu' ).before( toggleButtons.submenu ); // add the submenu nav buttons
 		$( '.' + mainMenuButtonClass ).each( _addClassID );
 		$( window ).on( 'resize.genesisSample', _doResize ).triggerHandler( 'resize.genesisSample' );
 		$( '.' + mainMenuButtonClass ).on( 'click.genesisSample-mainbutton', _mainmenuToggle );
-		$( '.' + subMenuButtonClass ).on( 'click.genesisSample-subbutton', _submenuToggle );
 	};
 
 	// add nav class and ID to related button
@@ -77,23 +65,6 @@
 		$this.toggleClass( 'activated' );
 		$this.next( 'nav, .sub-menu' ).slideToggle( 'fast' );
 		$( 'body' ).toggleClass( 'menu-active' );
-	}
-
-	/**
-	 * action for submenu toggles
-	 */
-	function _submenuToggle() {
-
-		var $this  = $( this ),
-			others = $this.closest( '.menu-item' ).siblings();
-		_toggleAria( $this, 'aria-pressed' );
-		_toggleAria( $this, 'aria-expanded' );
-		$this.toggleClass( 'activated' );
-		$this.next( '.sub-menu' ).slideToggle( 'fast' );
-
-		others.find( '.' + subMenuButtonClass ).removeClass( 'activated' ).attr( 'aria-pressed', 'false' );
-		others.find( '.sub-menu' ).slideUp( 'fast' );
-
 	}
 
 	/**

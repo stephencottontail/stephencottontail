@@ -90,10 +90,26 @@
 		font-size: $font-size;
 		margin: 0;
 		padding: 0;
+		
+		ul {
+			text-transform: uppercase;
+			width: 100%;
+
+			ul {
+				text-transform: none;
+				margin-left: ( $spacer / 2 );
+			}
+		}
 
 		a {
 			display: block;
 			padding: ( $spacer / 2 );
+			
+			&:hover,
+			&:focus {
+				background-color: $background-color;
+				color: $primary-color;
+			}
 		}
 	}
 }

@@ -10,6 +10,7 @@
 
 		& > .wrap {
 			background-image: linear-gradient( to right, rgba( $secondary-color, 0.75 ), rgba( $primary-color, 1 ) );
+			height: 100%;
 			margin: 0 ( $spacer * 2 );
 		}
 	}
