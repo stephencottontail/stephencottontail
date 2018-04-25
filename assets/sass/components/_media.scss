@@ -1,0 +1,35 @@
+img,
+figure {
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 0 $spacer $spacer 0;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 0 0 $spacer $spacer;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+.gallery-item {
+	text-align: center;
+	vertical-align: top;
+	max-width: 100%;
+	
+	@for $i from 1 through 9 {
+		.gallery-columns-#{$i} & {
+			max-width: 100% / $i;
+		}
+	}
+}

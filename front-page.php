@@ -7,6 +7,13 @@ add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
 
+// We use custom post displays on the fron page too, so we don't need this either
+remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
+remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
+remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+remove_action( 'genesis_after_post_content', 'genesis_post_meta' );
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+
 function sc_front_loop() {
 	?>
 	<div class="front-page-posts-section recent-posts-section">
@@ -38,5 +45,19 @@ function sc_front_loop() {
 <?php
 }
 add_action( 'genesis_loop', 'sc_front_loop' );
-	
+
+function sc_front_page_post_content() {
+	if ( has_post_thumbnail() ) {
+		genesis_do_post_image();
+	} else {
+		genesis_do_post_content();
+	}
+}
+add_action( 'genesis_entry_content', 'sc_front_page_post_content' );
+
+function sc_post_date() {
+	echo apply_filters( 'genesis_post_info', '[post_date]' );
+}
+add_action( 'genesis_entry_footer', 'sc_post_date' );
+
 genesis();
