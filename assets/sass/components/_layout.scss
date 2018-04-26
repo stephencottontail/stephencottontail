@@ -1,3 +1,11 @@
+.site-inner {
+	padding: $spacer * 2;
+	
+	.home & {
+		padding: 0;
+	}
+}
+
 @include river {
 	.site-container {
 		display: flex;
@@ -14,11 +22,6 @@
 		flex-basis: 66.66%;
 		min-width: 0;
 		min-height: 100vh;
-		padding: $spacer * 2;
-		
-		.home & {
-			padding: 0;
-		}
 	}
 
 	.genesis-skip-link {

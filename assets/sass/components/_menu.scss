@@ -64,7 +64,8 @@
 	line-height: 1.1;
 	overflow-y: scroll;
 	padding: ( $spacer * 5 ) 20%;
-
+	z-index: 90;
+	
 	.admin-bar & {
 		@include admin-bar();
 	}
@@ -108,4 +109,8 @@
 			}
 		}
 	}
+}
+
+textarea {
+	max-width: 100%;
 }
