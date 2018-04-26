@@ -50,7 +50,6 @@
 		if ( typeof buttons === 'undefined' ) {
 			return;
 		}
-		_superfishToggle( buttons );
 		_changeSkipLink( buttons );
 		_maybeClose( buttons );
 	}
@@ -65,24 +64,6 @@
 		$this.toggleClass( 'activated' );
 		$this.next( 'nav, .sub-menu' ).slideToggle( 'fast' );
 		$( 'body' ).toggleClass( 'menu-active' );
-	}
-
-	/**
-	 * activate/deactivate superfish
-	 */
-	function _superfishToggle( buttons ) {
-		if ( typeof $( '.js-superfish' ).superfish !== 'function' ) {
-			return;
-		}
-		if ( 'none' === _getDisplayValue( buttons ) ) {
-			$( '.js-superfish' ).superfish( {
-				'delay': 100,
-				'animation': {'opacity': 'show', 'height': 'show'},
-				'dropShadows': false
-			} );
-		} else {
-			$( '.js-superfish' ).superfish( 'destroy' );
-		}
 	}
 
 	/**

@@ -33,7 +33,6 @@ add_theme_support( 'html5', array(
 // Use genesis' built-in a11y support
 add_theme_support( 'genesis-accessibility', array(
 	'404-page',
-	'drop-down-menu',
 	'headings',
 	'rems',
 	'search-form',
@@ -42,6 +41,9 @@ add_theme_support( 'genesis-accessibility', array(
 
 // Add viewport meta tage for mobile browsers
 add_theme_support( 'genesis-responsive-viewport' );
+
+// Disable superfish
+add_filter( 'genesis-_superfish_enabled', false );
 
 function sc_enqueue_crap() {
 	wp_enqueue_style( 'normalize', get_theme_file_uri( '/assets/css/normalize.css' ) );
