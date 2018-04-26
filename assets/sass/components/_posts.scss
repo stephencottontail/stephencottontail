@@ -1,0 +1,21 @@
+.entry {
+	margin-bottom: ( $spacer * 2 );
+	
+	&:last-of-type {
+		margin: 0;
+	}
+}
+
+.entry-header {
+	font-style: italic;
+	padding-bottom: ( $spacer / 2 );
+}
+
+.entry-footer {
+	color: $primary-color;
+	font-family: $header-font;
+	font-size: 24px;
+	font-style: italic;
+	padding: ( $spacer / 2 );
+	text-align: right;
+}
