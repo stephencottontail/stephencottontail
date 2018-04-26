@@ -49,4 +49,4 @@ function sc_enqueue_crap() {
 
 	wp_enqueue_script( 'sc-menus', get_theme_file_uri( '/assets/js/mobile-navigation.js' ), array( 'jquery' ), null, true );
 }
-add_action( 'wp_enqueue_scripts', 'sc_enqueue_crap' );
+add_action( 'genesis_meta', 'sc_enqueue_crap' );
