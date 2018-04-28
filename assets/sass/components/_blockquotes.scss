@@ -1,0 +1,28 @@
+blockquote {
+	position: relative;
+	background-color: rgba( $secondary-color, 0.25 );
+	margin: $spacer 0;
+	padding: $spacer ( $spacer / 2 );
+	
+	p {
+		margin: 0;
+	}
+	
+	cite {
+		margin-top: $spacer;
+	}
+	
+	&:before {
+		position: absolute;
+		top: -75%;
+		left: -#{($spacer / 2)};
+		height: 48px;
+		width: 54px;
+		content: '"';
+		color: $secondary-color;
+		font-family: $header-font;
+		font-size: 120px;
+		font-style: italic;
+		opacity: 0.85;
+	}
+}
