@@ -9,6 +9,23 @@
 .entry-header {
 	font-style: italic;
 	padding-bottom: ( $spacer / 2 );
+
+	@include pond {
+		.single & {
+			position: relative;
+			padding: $spacer;
+		}
+		
+		.has-post-thumbnail & {
+			top: -100px;
+			left: $spacer;
+			min-width: 25%;
+			max-width: 75%;
+			background-color: $background-color;
+			padding: $spacer;
+			word-break: break-all;
+		}
+	}
 }
 
 .entry-footer {
