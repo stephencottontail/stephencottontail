@@ -46,6 +46,7 @@ function sc_front_loop() {
 }
 add_action( 'genesis_loop', 'sc_front_loop' );
 
+/* Set up the post content for front page loops */
 function sc_front_page_post_content() {
 	if ( has_post_thumbnail() ) {
 		genesis_do_post_image();
@@ -55,9 +56,6 @@ function sc_front_page_post_content() {
 }
 add_action( 'genesis_entry_content', 'sc_front_page_post_content' );
 
-function sc_post_date() {
-	echo apply_filters( 'genesis_post_info', '[post_date]' );
-}
-add_action( 'genesis_entry_footer', 'sc_post_date' );
+add_action( 'genesis_entry_footer', 'sc_post_date', 12 );
 
 genesis();

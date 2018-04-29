@@ -330,15 +330,22 @@ textarea {
       width: 50%; } }
   .front-page-posts-section .section-title {
     margin-bottom: 48px; }
+  .front-page-posts-section .entry-header {
+    min-width: 100%; }
   .front-page-posts-section .entry-image {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
   .front-page-posts-section .has-post-thumbnail {
     position: relative; }
+    .front-page-posts-section .has-post-thumbnail .entry-header {
+      padding: 0; }
     .front-page-posts-section .has-post-thumbnail .entry-footer {
       position: absolute;
       bottom: 0;
       right: 0;
+      color: #acb6e5;
+      font-family: "Trirong", "Palatino", serif;
+      font-size: 24px;
       text-shadow: 3px 3px rgba(34, 34, 34, 0.85);
       width: 100%; }
   .front-page-posts-section a {
@@ -397,8 +404,7 @@ figure {
   padding-bottom: 12px; }
   @media (min-width: 769px) {
     .single .entry-header {
-      position: relative;
-      padding: 24px; }
+      position: relative; }
     .has-post-thumbnail .entry-header {
       top: -100px;
       left: 24px;
@@ -409,9 +415,6 @@ figure {
       word-break: break-all; } }
 
 .entry-footer {
-  color: #acb6e5;
-  font-family: "Trirong", "Palatino", serif;
-  font-size: 24px;
   font-style: italic;
   padding: 12px;
   text-align: right; }

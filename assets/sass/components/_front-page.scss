@@ -10,6 +10,10 @@
 	.section-title {
 		margin-bottom: ( $spacer * 2 );
 	}
+
+	.entry-header {
+		min-width: 100%;
+	}
 	
 	.entry-image {
 		filter: grayscale( 100% );
@@ -18,10 +22,17 @@
 	.has-post-thumbnail {
 		position: relative;
 
+		.entry-header {
+			padding: 0;
+		}
+
 		.entry-footer {
 			position: absolute;
 			bottom: 0;
 			right: 0;
+			color: $primary-color;
+			font-family: $header-font;
+			font-size: 24px;
 			text-shadow: 3px 3px rgba( $body-color, 0.85 );
 			width: 100%;
 		}

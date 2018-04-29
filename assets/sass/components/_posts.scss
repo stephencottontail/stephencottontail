@@ -13,7 +13,6 @@
 	@include pond {
 		.single & {
 			position: relative;
-			padding: $spacer;
 		}
 		
 		.has-post-thumbnail & {
@@ -29,9 +28,6 @@
 }
 
 .entry-footer {
-	color: $primary-color;
-	font-family: $header-font;
-	font-size: 24px;
 	font-style: italic;
 	padding: ( $spacer / 2 );
 	text-align: right;
