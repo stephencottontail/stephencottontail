@@ -14,6 +14,16 @@ remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 remove_action( 'genesis_after_post_content', 'genesis_post_meta' );
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 
+function sc_front_content() {
+	?>
+	<div class="front-page-hero">
+		<p class="lead">Hi, I'm Stephen...</p>
+		<p>...and I make cool WordPress things. To see these cool WordPress things, check out my <a href="https://github.com/stephencottontail/">GitHub</a>, or to see other cool things I do, check out my <a href="https://twitter.com/s_cottontail24">Twitter</a>.</p>
+	</div>
+<?php
+}
+add_action( 'genesis_before_loop', 'sc_front_content' );
+
 function sc_front_loop() {
 	?>
 	<div class="front-page-posts-section recent-posts-section">

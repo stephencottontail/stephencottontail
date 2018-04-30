@@ -397,6 +397,15 @@ textarea {
       .site-footer p {
         margin: 0 0 12px 0; } }
 
+.front-page-hero {
+  padding: 48px 48px 0; }
+  .front-page-hero .lead {
+    font-size: 1.2em;
+    font-weight: bold; }
+    @media (min-width: 1024px) {
+      .front-page-hero .lead {
+        font-size: 2em; } }
+
 .front-page-posts-section {
   padding: 48px; }
   @media (min-width: 1024px) {
