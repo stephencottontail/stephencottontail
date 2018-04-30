@@ -30,6 +30,10 @@
 	
 	.entry-image {
 		filter: grayscale( 100% );
+
+		&:hover {
+			filter: grayscale( 0% );
+		}
 	}
 	
 	.has-post-thumbnail {
