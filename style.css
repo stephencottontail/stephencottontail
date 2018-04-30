@@ -394,6 +394,14 @@ figure {
   .gallery-columns-9 .gallery-item {
     max-width: 11.11111%; }
 
+.archive-description {
+  border-bottom: 2px solid #74ebd5;
+  margin-bottom: 24px;
+  padding: 12px 0; }
+
+.archive-title {
+  margin: 0; }
+
 .entry {
   margin-bottom: 48px; }
   .entry:last-of-type {
