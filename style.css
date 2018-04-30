@@ -226,6 +226,9 @@ label {
         height: 100%;
         margin: 0 48px; } }
 
+.site-home-link {
+  text-decoration: none; }
+
 .menu-toggle {
   position: absolute;
   top: 0;
