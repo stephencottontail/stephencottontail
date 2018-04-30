@@ -66,6 +66,12 @@ function sc_front_page_post_content() {
 }
 add_action( 'genesis_entry_content', 'sc_front_page_post_content' );
 
-add_action( 'genesis_entry_footer', 'sc_post_date', 12 );
+/* I can't figure out how to make Genesis fire off hooks for CPTs, so let's just brute-force it */
+remove_action( 'genesis_entry_header', 'sc_post_info', 12 );
+add_action( 'genesis_entry_footer', 'sc_front_post_date' );
+
+function sc_front_post_date() {
+	echo apply_filters( 'genesis_post_info', sprintf( '<a href="%s" rel="bookmark">[post_date]</a>', esc_url( get_permalink() ) ) );
+}
 
 genesis();

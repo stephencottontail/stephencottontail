@@ -281,6 +281,8 @@ label {
   font-style: italic;
   padding: 12px;
   text-align: right; }
+  .entry-footer span {
+    display: block; }
 
 .menu-toggle {
   position: absolute;
