@@ -48,7 +48,13 @@ function sc_show_comment( $comment, $args, $depth ) {
 					<div class="comment-actions">
 						<?php
 						comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) );
-						edit_comment_link( 'Edit' );
+
+						if ( get_edit_comment_link() ) :
+						?>
+							<span class="sep"> / </span>
+							<?php edit_comment_link( 'Edit' );
+
+						endif;
 						?>
 					</div><!-- .comment-actions -->
 				</div><!-- .comment-body -->
