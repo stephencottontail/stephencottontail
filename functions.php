@@ -14,6 +14,7 @@ include_once( get_theme_file_path( '/lib/init.php' ) );
 
 // Load some other stuff
 include_once( get_stylesheet_directory() . '/lib/header.php' );
+include_once( get_stylesheet_directory() . '/lib/footer.php' );
 include_once( get_stylesheet_directory() . '/lib/post.php' );
 include_once( get_stylesheet_directory() . '/lib/comments.php' );
 
