@@ -1,0 +1,60 @@
+.entry-comments {
+	margin: ( $spacer / 2 ) 0;
+
+	.comment-list,
+	.children {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.avatar {
+		display: block;
+	}
+
+	cite {
+		font-size: 24px;
+		line-height: 1.2;
+	}
+}
+
+@include river {
+	.comment-body {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.comment-avatar {
+		flex-basis: 20%;
+		padding: 0 ( $spacer / 2 );
+	}
+
+	.comment-content {
+		position: relative;
+		background-color: #fff;
+		padding: $spacer;
+
+		&:before {
+			position: absolute;
+			top: 15%;
+			left: -16px;
+			content: ' ';
+			height: 0;
+			width: 0;
+			border-right: 16px solid #fff;
+			border-top: 8px solid transparent;
+			border-bottom: 8px solid transparent;
+		}
+	}
+}
+
+.comment-form {
+	margin: ( $spacer / 2 ) 0;
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	textarea {
+		width: 100%;
+	}
+}

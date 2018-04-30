@@ -132,6 +132,57 @@ blockquote {
     font-style: italic;
     opacity: 0.85; }
 
+input[type="text"],
+input[type="url"],
+input[type="email"],
+textarea {
+  max-width: 100%;
+  height: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #f5f5f5;
+  border: 1px solid #acb6e5;
+  border-radius: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 3px; }
+  input[type="text"]:hover, input[type="text"]:active, input[type="text"]:focus,
+  input[type="url"]:hover,
+  input[type="url"]:active,
+  input[type="url"]:focus,
+  input[type="email"]:hover,
+  input[type="email"]:active,
+  input[type="email"]:focus,
+  textarea:hover,
+  textarea:active,
+  textarea:focus {
+    background-color: #fff; }
+
+button,
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #acb6e5;
+  border-radius: none;
+  padding: 12px 24px;
+  -webkit-transition: all 350ms ease-out;
+  transition: all 350ms ease-out; }
+  button:hover, button:active, button:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    background-color: #acb6e5; }
+
+label {
+  display: block;
+  width: 100%; }
+
 .site-inner {
   padding: 48px; }
   .home .site-inner {
@@ -426,3 +477,50 @@ figure {
   font-style: italic;
   padding: 12px;
   text-align: right; }
+
+.entry-comments {
+  margin: 12px 0; }
+  .entry-comments .comment-list,
+  .entry-comments .children {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .entry-comments .avatar {
+    display: block; }
+  .entry-comments cite {
+    font-size: 24px;
+    line-height: 1.2; }
+
+@media (min-width: 1024px) {
+  .comment-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+  .comment-avatar {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+    padding: 0 12px; }
+  .comment-content {
+    position: relative;
+    background-color: #fff;
+    padding: 24px; }
+    .comment-content:before {
+      position: absolute;
+      top: 15%;
+      left: -16px;
+      content: ' ';
+      height: 0;
+      width: 0;
+      border-right: 16px solid #fff;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent; } }
+
+.comment-form {
+  margin: 12px 0; }
+  .comment-form input[type="text"],
+  .comment-form input[type="email"],
+  .comment-form input[type="url"],
+  .comment-form textarea {
+    width: 100%; }
