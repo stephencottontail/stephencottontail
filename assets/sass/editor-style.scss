@@ -1,0 +1,10 @@
+@import "global/global";
+@import "mixins/mixins";
+@import "components/components";
+
+/* editor overrides */
+.wp-caption-dd {
+	font-family: $header-font;
+	font-style: italic;
+	opacity: 0.75;
+}

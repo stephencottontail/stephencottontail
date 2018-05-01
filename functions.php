@@ -44,6 +44,9 @@ add_theme_support( 'genesis-accessibility', array(
 // Add viewport meta tage for mobile browsers
 add_theme_support( 'genesis-responsive-viewport' );
 
+// Enable editor styling
+add_editor_style( array( '//fonts.googleapis.com/css?family=Trirong:400,400i,900,900i|Rubik', 'editor-style.css' ) );
+
 // Disable superfish
 add_filter( 'genesis-_superfish_enabled', false );
 
