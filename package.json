@@ -26,12 +26,14 @@
     "babel-register": "^6.26.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.3",
     "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
     "normalize.css": "^8.0.0"
   },
-	"babel": {
-		"presets": [
-			"env"
-		]
-	}
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
 }
