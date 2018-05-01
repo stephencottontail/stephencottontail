@@ -10,6 +10,7 @@ textarea {
 	border-radius: none;
 	box-shadow: none;
 	padding: 3px;
+	transition: all 350ms ease-out;
 
 	&:hover,
 	&:active,
@@ -22,6 +23,7 @@ button,
 input[type="reset"],
 input[type="submit"] {
 	appearance: none;
+	background-color: $background-color;
 	border: 1px solid $primary-color;
 	border-radius: none;
 	padding: ( $spacer / 2 ) $spacer;
