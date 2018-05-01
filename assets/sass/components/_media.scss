@@ -33,3 +33,9 @@ figure {
 		}
 	}
 }
+
+.wp-caption-text {
+	font-family: $header-font;
+	font-style: italic;
+	opacity: 0.75;
+}

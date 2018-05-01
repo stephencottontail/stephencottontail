@@ -521,6 +521,11 @@ figure {
   .gallery-columns-9 .gallery-item {
     max-width: 11.11111%; }
 
+.wp-caption-text {
+  font-family: "Trirong", "Palatino", serif;
+  font-style: italic;
+  opacity: 0.75; }
+
 .entry-comments {
   margin: 12px 0; }
   .entry-comments .comment-list,
